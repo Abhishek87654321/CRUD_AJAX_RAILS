@@ -1,0 +1,9 @@
+
+
+$('.delete').on('ajax:success', function() {
+	// alert("The paragraph was clicked.");
+	$("#notice").html("<%= notice %>");
+	
+   $(this).closest('tr').fadeOut();
+
+});

@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<%if @pony.present? %>
+<p>
+  <strong>Name:</strong>
+  <%= @pony.name %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @pony.profession %>
+</p>
+
+
+<%= link_to 'Edit', edit_pony_path(@pony) %> |
+<%else%>
+<p class="danger">No record found</p>
+<%end%>
+<%= link_to 'Back', ponies_path %>
